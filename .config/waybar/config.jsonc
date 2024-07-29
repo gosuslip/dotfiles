@@ -1,0 +1,79 @@
+// -*- mode: jsonc -*-
+{
+   "output": "DP-2",
+   // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 48, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "reload_style_on_change": true,
+    "modules-left": ["hyprland/workspaces", "cpu", "memory"],
+    "modules-center": [],
+    "modules-right": ["network","wireplumber","clock"],
+    
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"1": "<span font='icon'>󰣨</span>",
+		"2": "<span font='icon'>󰭹</span>",
+		"3": "<span font='icon'>󰊗</span>",
+		"4": "<span font='icon'>󰎄</span>",
+		"5": "<span font='icon'></span>",	
+		"default": ""
+	},
+       "persistent-workspaces": {
+             "*": 5, // 5 workspaces by default on every monitor
+       }
+    },
+    
+    
+    "cpu": {
+        "interval": 3,
+        "format": "<span font='icon'></span> {usage}%",
+        "max-length": 10
+    },
+    
+    
+    "clock": {
+        "interval": 60,
+        "format": "<span font='icon'></span> {:%m/%d   <span font='icon'></span> %I:%M %p}",
+    	"format-icons": ["",],
+    },
+    
+
+    "memory": {
+    	"interval": 3,
+    	"format": " {}%",
+    	"max-length": 10
+    },
+    
+
+    "wireplumber": {
+    	"format": "{icon} {volume}%",
+    	"format-muted": "<span font='icon'></span>",
+    	"on-click": "helvum",
+    	"format-icons": [
+    	"<span font='icon'></span>",
+    	"<span font='icon'></span>",
+    	"<span font='icon'></span>",
+    	]
+    },
+    "network": {
+    	"interface": "enp6s0",
+    	"format": "{ifname}",
+    	"format-wifi": "{essid} ({signalStrength}%) ",
+    	"format-ethernet": "<span font='icon'></span> {bandwidthUpBits}   <span font='icon'></span> {bandwidthDownBits} <span font='icon'>󰈀</span>",
+    	"format-disconnected": "", //An empty format will hide the module.
+    	"tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    	"tooltip-format-ethernet": "{ifname} ",
+    	"tooltip-format-disconnected": "Disconnected",
+	"interval": 10,
+    	"max-length": 50,
+    },
+    "tray": {
+    "icon-size": 21,
+    "spacing": 10
+    }
+},

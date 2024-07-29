@@ -1,0 +1,19 @@
+2024/07/28-16:45:05.960 63f9 Reusing MANIFEST /home/lucas/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/07/28-16:45:05.961 63f9 Recovering log #2756
+2024/07/28-16:45:05.965 63f9 Level-0 table #2759: started
+2024/07/28-16:45:05.970 63f9 Level-0 table #2759: 2389042 bytes OK
+2024/07/28-16:45:05.972 63f9 Delete type=0 #2756
+2024/07/28-16:45:05.972 63fc Compacting 4@0 + 2@1 files
+2024/07/28-16:45:05.984 63fc Generated table #2761@0: 8 keys, 2389743 bytes
+2024/07/28-16:45:05.995 63fc Generated table #2762@0: 67 keys, 817528 bytes
+2024/07/28-16:45:05.995 63fc Compacted 4@0 + 2@1 files => 3207271 bytes
+2024/07/28-16:45:05.996 63fc compacted to: files[ 0 2 1 0 0 0 0 ]
+2024/07/28-16:45:05.996 63fc Delete type=2 #2748
+2024/07/28-16:45:05.996 63fc Delete type=2 #2749
+2024/07/28-16:45:05.996 63fc Delete type=2 #2752
+2024/07/28-16:45:05.996 63fc Delete type=2 #2754
+2024/07/28-16:45:05.996 63fc Delete type=2 #2757
+2024/07/28-16:45:05.996 63fc Delete type=2 #2759
+2024/07/28-17:02:52.144 63fc Level-0 table #2764: started
+2024/07/28-17:02:52.147 63fc Level-0 table #2764: 29186 bytes OK
+2024/07/28-17:02:52.149 63fc Delete type=0 #2760
